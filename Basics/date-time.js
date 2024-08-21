@@ -60,3 +60,23 @@ console.log(bdayInSeconds/1000);
 
 //This gives my DOB in seconds, we just subtracted the
 console.log(Math.floor((mytimestamp - bdayInSeconds)/1000));
+
+//More inbuilt functions of Date()
+
+let anotherDate = new Date()
+//+1 for simplifying it to users, as month count start from 0
+console.log(anotherDate.getMonth() + 1); 
+
+console.log(anotherDate.getFullYear());
+//0 = Sunday, 1=Monday and so on
+console.log(anotherDate.getDay());
+
+//In String Interpolation
+
+console.log(`Today Date is ${Date.now()}, and year is ${anotherDate.getFullYear()}`);
+
+//toLocaleString(), many options and parameter can be defined within this function.
+
+console.log(anotherDate.toLocaleString('default', {
+   weekday: 'long'
+}))
