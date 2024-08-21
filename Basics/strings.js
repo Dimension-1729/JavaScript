@@ -49,6 +49,14 @@ console.log(newurl.includes('kumar'));
 const split_result = url.split('/')
 console.log(split_result);
 
+//valueof() only returns object value or args
+const stringObj = new String('foo');
+
+console.log(stringObj);
+// Expected output: String { "foo" }
+
+console.log(stringObj.valueOf());
+// Expected output: "foo"
 
 
 
