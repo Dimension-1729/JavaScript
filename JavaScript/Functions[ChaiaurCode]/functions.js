@@ -12,7 +12,7 @@ console.log(addNumb(2,null))
 
 console.log(addNumb());  //NaN
 
-//Return function usage, function to check whether a user logged in or not
+//Return function usage[Yahin se Return Kar dega, aage ka code execute nhi karega] function to check whether a user logged in or not
 
 function userLogged(user = "Karan")  {
     if (user === undefined) {
