@@ -32,3 +32,35 @@ map.set('Ward 16', 'Shastri Nagar')
 map.set('Ward 7','Preet Vihar')
 map.set('Ward 15','Nirman Vihar')
 console.log(map);
+
+for (const element of map) {
+    console.log(element);
+    
+}
+//Destructuring of Array
+//Syntax for, if you need key and value pair separately
+for (const [key,value] of map) {
+    console.log(`Key: ${key} and Value: ${value}`);
+    
+}
+
+//for-of loop on object
+
+const capital_cities = {
+    "Uttar Pradesh" : "Meerut",
+    "Himachal Pradesh" : "Shimla",
+    "Punjab" : "Chandigargh",
+    "Rajasthan" : "Jaipur"
+}
+
+//console.log(capital_cities);
+
+//Object not iterable using for-of loop
+// for (const element of capital_cities) {
+//     console.log(element);
+    
+// }
+
+for (const key in capital_cities) {
+    console.log(`State: ${key} and City: ${capital_cities[key]}`);
+}
